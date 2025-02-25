@@ -1,0 +1,12 @@
+18:57:48 **** Incremental Build of configuration Debug for project 001Task ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I"E:/rtos_Workspace/Rtos_workspace/001Task/third_party/FreeRTOS" -I"E:/rtos_Workspace/Rtos_workspace/001Task/third_party/FreeRTOS/include" -I"E:/rtos_Workspace/Rtos_workspace/001Task/third_party/FreeRTOS/portable/GCC/ARM_CM4F" -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "001Task.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\rtos_Workspace\Rtos_workspace\001Task\STM32F401VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="001Task.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: 001Task.elf section `.bss' will not fit in region `RAM'
+C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: region `RAM' overflowed by 14512 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:67: 001Task.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+18:57:50 Build Failed. 3 errors, 0 warnings. (took 1s.457ms)
+

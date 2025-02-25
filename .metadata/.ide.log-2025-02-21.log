@@ -1,0 +1,83 @@
+2025-02-21 01:53:58,672 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Exception in thread "AWT-EventQueue-0" java.lang.ClassCastException: class sun.awt.windows.WEmbeddedFrame cannot be cast to class javax.swing.JFrame (sun.awt.windows.WEmbeddedFrame and javax.swing.JFrame are in module java.desktop of loader 'bootstrap')
+2025-02-21 01:53:58,702 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.microxplorer.plugins.clock.ClockConfigurationView.activatePlugin(ClockConfigurationView.java:425)
+2025-02-21 01:53:58,706 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.microxplorer.maingui.MainPanel$1.stateChanged(MainPanel.java:382)
+2025-02-21 01:53:58,709 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane.fireStateChanged(JTabbedPane.java:446)
+2025-02-21 01:53:58,713 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane$ModelListener.stateChanged(JTabbedPane.java:297)
+2025-02-21 01:53:58,717 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.DefaultSingleSelectionModel.fireStateChanged(DefaultSingleSelectionModel.java:148)
+2025-02-21 01:53:58,721 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.DefaultSingleSelectionModel.setSelectedIndex(DefaultSingleSelectionModel.java:79)
+2025-02-21 01:53:58,724 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane.setSelectedIndexImpl(JTabbedPane.java:650)
+2025-02-21 01:53:58,727 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane.setSelectedIndex(JTabbedPane.java:625)
+2025-02-21 01:53:58,731 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.plaf.basic.BasicTabbedPaneUI$Handler.mousePressed(BasicTabbedPaneUI.java:4140)
+2025-02-21 01:53:58,735 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6618)
+2025-02-21 01:53:58,738 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3398)
+2025-02-21 01:53:58,741 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processEvent(Component.java:6386)
+2025-02-21 01:53:58,744 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
+2025-02-21 01:53:58,747 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4996)
+2025-02-21 01:53:58,751 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+2025-02-21 01:53:58,754 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+2025-02-21 01:53:58,757 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
+2025-02-21 01:53:58,763 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4572)
+2025-02-21 01:53:58,771 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
+2025-02-21 01:53:58,774 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
+2025-02-21 01:53:58,777 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+2025-02-21 01:53:58,781 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775)
+2025-02-21 01:53:58,785 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+2025-02-21 01:53:58,788 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+2025-02-21 01:53:58,791 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+2025-02-21 01:53:58,796 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+2025-02-21 01:53:58,801 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98)
+2025-02-21 01:53:58,803 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747)
+2025-02-21 01:53:58,806 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+2025-02-21 01:53:58,809 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+2025-02-21 01:53:58,815 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+2025-02-21 01:53:58,819 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744)
+2025-02-21 01:53:58,823 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+2025-02-21 01:53:58,826 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+2025-02-21 01:53:58,830 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+2025-02-21 01:53:58,834 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+2025-02-21 01:53:58,837 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+2025-02-21 01:53:58,840 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2025-02-21 01:54:48,596 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 489190992 Bytes (751828992)
+2025-02-21 01:54:49,042 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 514883152 Bytes (751828992)
+2025-02-21 01:54:51,081 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 561141128 Bytes (751828992)
+2025-02-21 01:54:52,620 [INFO] ProjectBuilder:2349 - IP not ready for code generation: Clock
+2025-02-21 01:54:55,870 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2025-02-21 01:54:55,870 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2025-02-21 01:54:55,871 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2025-02-21 01:54:55,871 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2025-02-21 01:54:55,872 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2025-02-21 01:54:55,874 [INFO] CodeGenerator:896 - code generatio: config db path: C:\ST\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.13.0.202411220809\\db\
+2025-02-21 01:54:56,176 [INFO] CodeEngine:255 - oldGeneratedFile, E:\rtos_Workspace\Rtos_workspace\start\MXTmpFiles\license.tmp_save
+2025-02-21 01:54:57,015 [INFO] CodeEngine:279 - Generated code: E:\rtos_Workspace\Rtos_workspace\start\MXTmpFiles\license.tmp
+2025-02-21 01:54:57,201 [INFO] CodeEngine:255 - oldGeneratedFile, E:\rtos_Workspace\Rtos_workspace\start\MXTmpFiles\gpio.tmp_save
+2025-02-21 01:54:57,487 [INFO] CodeEngine:279 - Generated code: E:\rtos_Workspace\Rtos_workspace\start\MXTmpFiles\gpio.tmp
+2025-02-21 01:54:57,633 [INFO] CodeEngine:255 - oldGeneratedFile, E:\rtos_Workspace\Rtos_workspace\start\Core\Src\stm32f4xx_it.c_save
+2025-02-21 01:54:57,910 [INFO] CodeEngine:279 - Generated code: E:\rtos_Workspace\Rtos_workspace\start\Core\Src\stm32f4xx_it.c
+2025-02-21 01:54:57,922 [INFO] CodeEngine:255 - oldGeneratedFile, E:\rtos_Workspace\Rtos_workspace\start\Core\Inc\stm32f4xx_it.h_save
+2025-02-21 01:54:58,103 [INFO] CodeEngine:279 - Generated code: E:\rtos_Workspace\Rtos_workspace\start\Core\Inc\stm32f4xx_it.h
+2025-02-21 01:54:58,129 [INFO] CodeEngine:255 - oldGeneratedFile, E:\rtos_Workspace\Rtos_workspace\start\Core\Src\stm32f4xx_hal_msp.c_save
+2025-02-21 01:54:58,445 [INFO] CodeEngine:279 - Generated code: E:\rtos_Workspace\Rtos_workspace\start\Core\Src\stm32f4xx_hal_msp.c
+2025-02-21 01:54:58,478 [INFO] CodeEngine:255 - oldGeneratedFile, E:\rtos_Workspace\Rtos_workspace\start\MXTmpFiles\system.tmp_save
+2025-02-21 01:54:58,629 [INFO] CodeEngine:279 - Generated code: E:\rtos_Workspace\Rtos_workspace\start\MXTmpFiles\system.tmp
+2025-02-21 01:54:58,651 [INFO] CodeEngine:311 - oldGeneratedFile, E:\rtos_Workspace\Rtos_workspace\start\Core\Inc\stm32f4xx_hal_conf.h_save
+2025-02-21 01:54:58,857 [INFO] CodeEngine:335 - Generated code: E:\rtos_Workspace\Rtos_workspace\start\Core\Inc\stm32f4xx_hal_conf.h
+2025-02-21 01:54:58,974 [INFO] ApiDbMcu:508 - Load IP Config File for USART2
+2025-02-21 01:54:58,987 [INFO] ApiDbMcu:508 - Load IP Config File for RCC
+2025-02-21 01:54:59,010 [INFO] CodeEngine:255 - oldGeneratedFile, E:\rtos_Workspace\Rtos_workspace\start\Core\Inc\main.h_save
+2025-02-21 01:54:59,224 [INFO] CodeEngine:279 - Generated code: E:\rtos_Workspace\Rtos_workspace\start\Core\Inc\main.h
+2025-02-21 01:54:59,233 [INFO] CodeEngine:255 - oldGeneratedFile, E:\rtos_Workspace\Rtos_workspace\start\Core\Src\main.c_save
+2025-02-21 01:54:59,555 [INFO] CodeEngine:279 - Generated code: E:\rtos_Workspace\Rtos_workspace\start\Core\Src\main.c
+2025-02-21 01:55:00,242 [INFO] ProjectBuilder:3289 - Time for Copy HAL[1] : 320mS.
+2025-02-21 01:55:00,255 [INFO] ProjectBuilder:4876 - Project Generator version: 4.5.0-RC5
+2025-02-21 01:55:00,472 [INFO] ConfigFileManager:1579 - The Die is : DIE413
+2025-02-21 01:55:00,489 [INFO] ApiDbMcu:508 - Load IP Config File for FATFS
+2025-02-21 01:55:00,502 [INFO] ApiDbMcu:508 - Load IP Config File for FREERTOS
+2025-02-21 01:55:00,510 [INFO] ApiDbMcu:508 - Load IP Config File for LIBJPEG
+2025-02-21 01:55:00,525 [INFO] ApiDbMcu:508 - Load IP Config File for LWIP
+2025-02-21 01:55:00,543 [INFO] ApiDbMcu:508 - Load IP Config File for MBEDTLS
+2025-02-21 01:55:00,562 [INFO] ApiDbMcu:508 - Load IP Config File for USB_DEVICE
+2025-02-21 01:55:00,571 [INFO] ApiDbMcu:508 - Load IP Config File for USB_HOST
+2025-02-21 01:55:01,339 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2025-02-21 01:55:05,323 [INFO] ProjectBuilder:5154 - Time for Generating toolchain IDE Files: 5068mS.
+2025-02-21 01:55:05,325 [INFO] ProjectBuilder:3146 - Time for Copy CMSIS : 1mS.
+2025-02-21 01:55:05,328 [INFO] ProjectBuilder:3146 - Time for Copy CMSIS : 0mS.

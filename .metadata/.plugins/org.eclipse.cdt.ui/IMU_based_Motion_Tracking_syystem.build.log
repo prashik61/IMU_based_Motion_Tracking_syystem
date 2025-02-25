@@ -1,0 +1,19 @@
+02:49:02 **** Incremental Build of configuration Debug for project IMU_based_Motion_Tracking_syystem ****
+make -j4 all 
+arm-none-eabi-gcc -o "IMU_based_Motion_Tracking_syystem.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_based_Motion_Tracking_syystem.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMU_based_Motion_Tracking_syystem.elf
+ 
+arm-none-eabi-size  IMU_based_Motion_Tracking_syystem.elf 
+arm-none-eabi-objdump -h -S IMU_based_Motion_Tracking_syystem.elf  > "IMU_based_Motion_Tracking_syystem.list"
+arm-none-eabi-objcopy  -O ihex IMU_based_Motion_Tracking_syystem.elf  "IMU_based_Motion_Tracking_syystem.hex"
+   text	   data	    bss	    dec	    hex	filename
+  14296	     92	   2060	  16448	   4040	IMU_based_Motion_Tracking_syystem.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMU_based_Motion_Tracking_syystem.hex
+ 
+Finished building: IMU_based_Motion_Tracking_syystem.list
+ 
+
+02:49:03 Build Finished. 0 errors, 0 warnings. (took 1s.7ms)
+

@@ -1,0 +1,13 @@
+../Core/Src/main.c:82:5:main	32	static,ignoring_inline_asm
+../Core/Src/main.c:142:6:SystemClock_Config	88	static
+../Core/Src/main.c:187:6:PeriphCommonClock_Config	32	static
+../Core/Src/main.c:207:13:MX_I2C1_Init	8	static
+../Core/Src/main.c:241:13:MX_I2S2_Init	8	static
+../Core/Src/main.c:275:13:MX_I2S3_Init	8	static
+../Core/Src/main.c:309:13:MX_SPI1_Init	8	static
+../Core/Src/main.c:347:13:MX_USB_OTG_FS_HCD_Init	8	static
+../Core/Src/main.c:378:13:MX_GPIO_Init	56	static
+../Core/Src/main.c:455:6:task1_hadler	4	static
+../Core/Src/main.c:458:7:task2_hadler	4	static
+../Core/Src/main.c:472:6:HAL_TIM_PeriodElapsedCallback	16	static
+../Core/Src/main.c:489:6:Error_Handler	4	static,ignoring_inline_asm
