@@ -40,7 +40,7 @@
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
 #define MPU6050_ADDR 0x68 << 1  // MPU6050 I2C address (shifted for STM32 HAL)
-//#define WHO_AM_I_REG 0x75
+#define WHO_AM_I_REG 0x75
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -56,38 +56,12 @@ void UART_Send(char *message) {
     HAL_UART_Transmit(&huart1, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
 }
 
-// Read MPU6050 Data
-void Read_MPU6050() {
-    uint8_t accel_data[6];
-    uint8_t Gyro_data[6];
-    int16_t AccelX, AccelY, AccelZ;
-    int16_t GyroX, GyroY, GyroZ;
-
-    uint8_t reg = 0x3B;  // MPU6050 register for acceleration
-    uint8_t gyroreg = 0x43;  // MPU6050 register for acceleration
-    HAL_I2C_Master_Transmit(&hi2c1, MPU6050_ADDR, &reg, 1, HAL_MAX_DELAY);
-    HAL_I2C_Master_Receive(&hi2c1, MPU6050_ADDR, accel_data, 6, HAL_MAX_DELAY);
-    HAL_I2C_Master_Transmit(&hi2c1, MPU6050_ADDR, &gyroreg, 1, HAL_MAX_DELAY);
-    HAL_I2C_Master_Receive(&hi2c1, MPU6050_ADDR, Gyro_data, 6, HAL_MAX_DELAY);
-    /*MSB shifting and LSB combine with OR operation */
-    AccelX = (accel_data[0] << 8) | accel_data[1];
-    AccelY = (accel_data[2] << 8) | accel_data[3];
-    AccelZ = (accel_data[4] << 8) | accel_data[5];
-
-    GyroX =  (Gyro_data[0]  << 8) | Gyro_data[1];
-    GyroY =  (Gyro_data[2]  << 8) | Gyro_data[3];
-    GyroZ =  (Gyro_data[4]  << 8) | Gyro_data[5];
-
-
-    char msg[100];
-    sprintf(msg, "Accel: X=%d Y=%d Z=%d\r\n", AccelX, AccelY, AccelZ);
-    UART_Send(msg);
-
-    char gyromsg[100];
-	sprintf(gyromsg, "Gyro: X=%d Y=%d Z=%d\r\n", GyroX, GyroY, GyroZ);
-	UART_Send(gyromsg);
+uint8_t MPU6050_Read_WhoAmI()
+{
+    uint8_t who_am_i = 0;
+    HAL_I2C_Mem_Read(&hi2c1, MPU6050_ADDR, WHO_AM_I_REG, 1, &who_am_i, 1, HAL_MAX_DELAY);
+    return who_am_i;
 }
-
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -138,7 +112,6 @@ int main(void)
   MX_USART2_UART_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-  UART_Send("STM32 Ready to Send MPU6050 Data...\r\n");
 
   /* USER CODE END 2 */
 
@@ -147,8 +120,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  Read_MPU6050();
-	  HAL_Delay(500);
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

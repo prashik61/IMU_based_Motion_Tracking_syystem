@@ -59,33 +59,19 @@ void UART_Send(char *message) {
 // Read MPU6050 Data
 void Read_MPU6050() {
     uint8_t accel_data[6];
-    uint8_t Gyro_data[6];
     int16_t AccelX, AccelY, AccelZ;
-    int16_t GyroX, GyroY, GyroZ;
 
     uint8_t reg = 0x3B;  // MPU6050 register for acceleration
-    uint8_t gyroreg = 0x43;  // MPU6050 register for acceleration
     HAL_I2C_Master_Transmit(&hi2c1, MPU6050_ADDR, &reg, 1, HAL_MAX_DELAY);
     HAL_I2C_Master_Receive(&hi2c1, MPU6050_ADDR, accel_data, 6, HAL_MAX_DELAY);
-    HAL_I2C_Master_Transmit(&hi2c1, MPU6050_ADDR, &gyroreg, 1, HAL_MAX_DELAY);
-    HAL_I2C_Master_Receive(&hi2c1, MPU6050_ADDR, Gyro_data, 6, HAL_MAX_DELAY);
-    /*MSB shifting and LSB combine with OR operation */
+
     AccelX = (accel_data[0] << 8) | accel_data[1];
     AccelY = (accel_data[2] << 8) | accel_data[3];
     AccelZ = (accel_data[4] << 8) | accel_data[5];
 
-    GyroX =  (Gyro_data[0]  << 8) | Gyro_data[1];
-    GyroY =  (Gyro_data[2]  << 8) | Gyro_data[3];
-    GyroZ =  (Gyro_data[4]  << 8) | Gyro_data[5];
-
-
     char msg[100];
     sprintf(msg, "Accel: X=%d Y=%d Z=%d\r\n", AccelX, AccelY, AccelZ);
     UART_Send(msg);
-
-    char gyromsg[100];
-	sprintf(gyromsg, "Gyro: X=%d Y=%d Z=%d\r\n", GyroX, GyroY, GyroZ);
-	UART_Send(gyromsg);
 }
 
 /* USER CODE END PV */

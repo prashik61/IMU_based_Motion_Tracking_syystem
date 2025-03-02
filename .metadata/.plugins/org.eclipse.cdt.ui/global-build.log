@@ -64,3 +64,66 @@ Finished building: IMU_based_Motion_Tracking_syystem.hex
  
 Finished building: IMU_based_Motion_Tracking_syystem.list
  
+02:39:39 **** Incremental Build of configuration Debug for project IMU_based_Motion_Tracking_syystem ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc -o "IMU_based_Motion_Tracking_syystem.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_based_Motion_Tracking_syystem.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMU_based_Motion_Tracking_syystem.elf
+ 
+arm-none-eabi-size  IMU_based_Motion_Tracking_syystem.elf 
+arm-none-eabi-objdump -h -S IMU_based_Motion_Tracking_syystem.elf  > "IMU_based_Motion_Tracking_syystem.list"
+arm-none-eabi-objcopy  -O ihex IMU_based_Motion_Tracking_syystem.elf  "IMU_based_Motion_Tracking_syystem.hex"
+   text	   data	    bss	    dec	    hex	filename
+  15628	     92	   2132	  17852	   45bc	IMU_based_Motion_Tracking_syystem.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMU_based_Motion_Tracking_syystem.hex
+ 
+Finished building: IMU_based_Motion_Tracking_syystem.list
+ 
+14:15:58 **** Build of configuration Debug for project IMU_based_Motion_Tracking_syystem ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Read_MPU6050':
+../Core/Src/main.c:71:50: error: 'gyro_data' undeclared (first use in this function); did you mean 'Gyro_data'?
+   71 |     HAL_I2C_Master_Receive(&hi2c1, MPU6050_ADDR, gyro_data, 6, HAL_MAX_DELAY);
+      |                                                  ^~~~~~~~~
+      |                                                  Gyro_data
+../Core/Src/main.c:71:50: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+14:16:31 **** Incremental Build of configuration Debug for project IMU_based_Motion_Tracking_syystem ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IMU_based_Motion_Tracking_syystem.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_based_Motion_Tracking_syystem.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMU_based_Motion_Tracking_syystem.elf
+ 
+arm-none-eabi-size  IMU_based_Motion_Tracking_syystem.elf 
+arm-none-eabi-objdump -h -S IMU_based_Motion_Tracking_syystem.elf  > "IMU_based_Motion_Tracking_syystem.list"
+arm-none-eabi-objcopy  -O ihex IMU_based_Motion_Tracking_syystem.elf  "IMU_based_Motion_Tracking_syystem.hex"
+   text	   data	    bss	    dec	    hex	filename
+  15800	     92	   2132	  18024	   4668	IMU_based_Motion_Tracking_syystem.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMU_based_Motion_Tracking_syystem.hex
+ 
+Finished building: IMU_based_Motion_Tracking_syystem.list
+ 
+14:58:16 **** Incremental Build of configuration Debug for project IMU_based_Motion_Tracking_syystem ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IMU_based_Motion_Tracking_syystem.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_based_Motion_Tracking_syystem.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IMU_based_Motion_Tracking_syystem.elf
+ 
+arm-none-eabi-size  IMU_based_Motion_Tracking_syystem.elf 
+arm-none-eabi-objdump -h -S IMU_based_Motion_Tracking_syystem.elf  > "IMU_based_Motion_Tracking_syystem.list"
+arm-none-eabi-objcopy  -O ihex IMU_based_Motion_Tracking_syystem.elf  "IMU_based_Motion_Tracking_syystem.hex"
+   text	   data	    bss	    dec	    hex	filename
+  15800	     92	   2132	  18024	   4668	IMU_based_Motion_Tracking_syystem.elf
+Finished building: default.size.stdout
+ 
+Finished building: IMU_based_Motion_Tracking_syystem.hex
+ 
+Finished building: IMU_based_Motion_Tracking_syystem.list
+ 

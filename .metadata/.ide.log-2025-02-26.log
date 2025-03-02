@@ -1,0 +1,49 @@
+2025-02-26 00:32:34,855 [INFO] WebApp:190 - Connection lost
+2025-02-26 00:32:35,523 [INFO] WebApp:187 - Connection restablished
+2025-02-26 02:33:24,748 [WARN] IP:2251 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-02-26 02:33:24,749 [WARN] IP:2251 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-02-26 02:33:24,751 [WARN] IP:2251 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-02-26 02:33:24,751 [WARN] IP:2251 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-02-26 02:33:24,913 [WARN] IP:2251 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-02-26 02:33:24,913 [WARN] IP:2251 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-02-26 02:33:25,031 [WARN] IP:2251 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-02-26 02:33:25,031 [WARN] IP:2251 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-02-26 02:33:42,425 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 763986536 Bytes (1073741824)
+2025-02-26 02:33:42,817 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 790243792 Bytes (1073741824)
+2025-02-26 02:33:44,766 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 862005080 Bytes (1073741824)
+2025-02-26 02:33:46,393 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2025-02-26 02:33:46,393 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2025-02-26 02:33:46,394 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: I2C
+2025-02-26 02:33:46,394 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2025-02-26 02:33:46,394 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2025-02-26 02:33:46,394 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2025-02-26 02:33:46,396 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2025-02-26 02:33:46,398 [INFO] CodeGenerator:896 - code generatio: config db path: C:\ST\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.13.0.202411220809\\db\
+2025-02-26 02:33:46,400 [WARN] IP:2251 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-02-26 02:33:46,401 [WARN] IP:2251 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-02-26 02:33:47,342 [INFO] CodeEngine:255 - oldGeneratedFile, E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\MXTmpFiles\license.tmp_save
+2025-02-26 02:33:47,822 [INFO] CodeEngine:279 - Generated code: E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\MXTmpFiles\license.tmp
+2025-02-26 02:33:47,910 [INFO] CodeEngine:255 - oldGeneratedFile, E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\MXTmpFiles\gpio.tmp_save
+2025-02-26 02:33:48,144 [INFO] CodeEngine:279 - Generated code: E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\MXTmpFiles\gpio.tmp
+2025-02-26 02:33:48,475 [INFO] CodeEngine:255 - oldGeneratedFile, E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\Core\Src\stm32f4xx_it.c_save
+2025-02-26 02:33:48,980 [INFO] CodeEngine:279 - Generated code: E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\Core\Src\stm32f4xx_it.c
+2025-02-26 02:33:48,992 [INFO] CodeEngine:255 - oldGeneratedFile, E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\Core\Inc\stm32f4xx_it.h_save
+2025-02-26 02:33:49,142 [INFO] CodeEngine:279 - Generated code: E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\Core\Inc\stm32f4xx_it.h
+2025-02-26 02:33:49,179 [INFO] CodeEngine:255 - oldGeneratedFile, E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\Core\Src\stm32f4xx_hal_msp.c_save
+2025-02-26 02:33:49,463 [INFO] CodeEngine:279 - Generated code: E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\Core\Src\stm32f4xx_hal_msp.c
+2025-02-26 02:33:49,479 [INFO] CodeEngine:255 - oldGeneratedFile, E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\MXTmpFiles\system.tmp_save
+2025-02-26 02:33:49,604 [INFO] CodeEngine:279 - Generated code: E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\MXTmpFiles\system.tmp
+2025-02-26 02:33:49,620 [INFO] CodeEngine:311 - oldGeneratedFile, E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\Core\Inc\stm32f4xx_hal_conf.h_save
+2025-02-26 02:33:49,807 [INFO] CodeEngine:335 - Generated code: E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\Core\Inc\stm32f4xx_hal_conf.h
+2025-02-26 02:33:49,870 [INFO] ApiDbMcu:508 - Load IP Config File for USART1
+2025-02-26 02:33:49,902 [INFO] CodeEngine:255 - oldGeneratedFile, E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\Core\Inc\main.h_save
+2025-02-26 02:33:50,134 [INFO] CodeEngine:279 - Generated code: E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\Core\Inc\main.h
+2025-02-26 02:33:50,148 [INFO] CodeEngine:255 - oldGeneratedFile, E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\Core\Src\main.c_save
+2025-02-26 02:33:50,488 [INFO] CodeEngine:279 - Generated code: E:\rtos_Workspace\Rtos_workspace\IMU_based_Motion_Tracking_syystem\Core\Src\main.c
+2025-02-26 02:33:51,342 [INFO] ProjectBuilder:3289 - Time for Copy HAL[1] : 447mS.
+2025-02-26 02:33:51,342 [INFO] ProjectBuilder:4876 - Project Generator version: 4.5.0-RC5
+2025-02-26 02:33:51,525 [INFO] ConfigFileManager:1579 - The Die is : DIE413
+2025-02-26 02:33:55,536 [INFO] ProjectBuilder:5154 - Time for Generating toolchain IDE Files: 4194mS.
+2025-02-26 02:33:55,537 [INFO] ProjectBuilder:3146 - Time for Copy CMSIS : 0mS.
+2025-02-26 02:33:55,540 [INFO] ProjectBuilder:3146 - Time for Copy CMSIS : 0mS.
+2025-02-26 03:36:07,430 [INFO] WebApp:389 - JxBrowser engine has been closed 
